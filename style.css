@@ -12,6 +12,7 @@ body {
 }
 
 .container {
+  width: 95%;
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
@@ -40,4 +41,44 @@ button {
 
 button:hover {
   background-color: #2980b9;
+}
+
+/* メディアクエリを追加してモバイル表示をサポート */
+@media (max-width: 600px) {
+  .container {
+    width: 92%;
+    margin: 30px auto;
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* さらに小さい画面サイズに対応 */
+@media (max-width: 375px) {
+  .container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 12px;
+  }
+  
+  h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 13px;
+  }
 }
